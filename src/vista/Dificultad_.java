@@ -8,12 +8,7 @@ public class Dificultad_ extends javax.swing.JFrame {
         this.setLocationRelativeTo(null);
     }
     
-    private void mostrarJuego(){
     
-        juego j = new juego();
-        j.setVisible(true);
-        this.dispose();
-    }
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -148,16 +143,18 @@ public class Dificultad_ extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnDificilActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDificilActionPerformed
-
-        mostrarJuego();
+        JuegoMecanografiaDificil juego = new JuegoMecanografiaDificil();
+       this.dispose();
     }//GEN-LAST:event_btnDificilActionPerformed
 
     private void btnFacilActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnFacilActionPerformed
-        mostrarJuego();
+        JuegoMecanografiafacil juego = new JuegoMecanografiafacil();
+        this.dispose();
     }//GEN-LAST:event_btnFacilActionPerformed
 
     private void btnMedioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMedioActionPerformed
-        mostrarJuego();
+        JuegoMecanografiaMedio juego = new JuegoMecanografiaMedio();
+        this.dispose();
     }//GEN-LAST:event_btnMedioActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed

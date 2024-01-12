@@ -15,7 +15,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Random;
 
-public class JuegoMecanografia {
+public class JuegoMecanografiafacil {
 
     // cantidad de letras que se mostrarán en la partida
     private final int CANTIDAD_RONDAS = 5;
@@ -33,7 +33,7 @@ public class JuegoMecanografia {
     private int jugadorActual; // Identificador del jugador actual
 
     // constructor
-    public JuegoMecanografia() {
+    public JuegoMecanografiafacil() {
         // datos ventana
         ventana = new JFrame("Juego de Mecanografía");
         ventana.setSize(400, 300);
@@ -194,6 +194,10 @@ public class JuegoMecanografia {
     }
 
     public static void main(String[] args) {
-        SwingUtilities.invokeLater(() -> new JuegoMecanografia());
+        SwingUtilities.invokeLater(() -> new JuegoMecanografiafacil());
+    }
+
+    void setVisible(boolean b) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
 }
