@@ -1,6 +1,9 @@
 
 package vista;
 
+import java.util.Arrays;
+import java.util.List;
+
 public class Dificultad_ extends javax.swing.JFrame {
 
     public Dificultad_() {
@@ -148,8 +151,9 @@ public class Dificultad_ extends javax.swing.JFrame {
     }//GEN-LAST:event_btnDificilActionPerformed
 
     private void btnFacilActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnFacilActionPerformed
-        JuegoMecanografiafacil juego = new JuegoMecanografiafacil();
-        this.dispose();
+        List<String> nombresJugadores = Arrays.asList("NombreJugador1", "NombreJugador2");
+    JuegoMecanografiaFacil juego = new JuegoMecanografiaFacil(nombresJugadores);
+    this.dispose();
     }//GEN-LAST:event_btnFacilActionPerformed
 
     private void btnMedioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMedioActionPerformed
